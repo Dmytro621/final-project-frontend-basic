@@ -70,20 +70,22 @@ body {
 }
 
 main {
+  font-family: "Montserrat", sans-serif;
+}
+main .hero {
   background: linear-gradient(208deg, #323264 0%, #323264 59.9%, #643e72 100%);
   border-radius: 0 0 12px 12px;
   padding: 0px 0px 60px 0px;
-  font-family: "Montserrat", sans-serif;
 }
-main .wrapper {
+main .hero .wrapper {
   width: 315px;
   margin-left: auto;
   margin-right: auto;
 }
-main .wrapper .services .services-content {
+main .hero .wrapper .services .services-content {
   margin-bottom: 30px;
 }
-main .wrapper .services .services-content a {
+main .hero .wrapper .services .services-content a {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -93,10 +95,10 @@ main .wrapper .services .services-content a {
   text-decoration: none;
   margin-bottom: 10px;
 }
-main .wrapper .services .services-content a:hover {
+main .hero .wrapper .services .services-content a:hover {
   color: #f0145a;
 }
-main .wrapper .services .services-content h2 {
+main .hero .wrapper .services .services-content h2 {
   font-weight: 700;
   font-size: 38px;
   background: linear-gradient(-298deg, #f0145a 0%, #ef8080 100%);
@@ -105,16 +107,16 @@ main .wrapper .services .services-content h2 {
   -webkit-text-fill-color: transparent;
   margin: 0;
 }
-main .wrapper .services .services-boxes {
+main .hero .wrapper .services .services-boxes {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
-main .wrapper .services .services-boxes .services-box {
+main .hero .wrapper .services .services-boxes .services-box {
   width: 315px;
 }
-main .wrapper .services .services-boxes .services-box .services-box-image {
+main .hero .wrapper .services .services-boxes .services-box .services-box-image {
   padding: 14px;
   background-color: #fff;
   border-radius: 24px;
@@ -122,30 +124,28 @@ main .wrapper .services .services-boxes .services-box .services-box-image {
   height: 92px;
   margin-bottom: 30px;
 }
-main .wrapper .services .services-boxes .services-box h3 {
+main .hero .wrapper .services .services-boxes .services-box h3 {
   font-weight: 700;
   font-size: 22px;
   color: #24a3ff;
   margin-top: 0;
   margin-bottom: 15px;
 }
-main .wrapper .services .services-boxes .services-box p {
+main .hero .wrapper .services .services-boxes .services-box p {
   font-weight: 400;
   font-size: 16px;
   line-height: 162%;
   color: #fff;
   margin: 0;
 }
-
-.line-hero-bottom {
+main .line-hero-bottom {
   height: 10px;
   background-color: #cacadb;
   border-radius: 0 0 12px 12px;
   margin-left: 20px;
   margin-right: 20px;
 }
-
-.line-hero-bottom-second {
+main .line-hero-bottom-second {
   height: 10px;
   background-color: #e7e7f2;
   border-radius: 0 0 12px 12px;
@@ -154,47 +154,47 @@ main .wrapper .services .services-boxes .services-box p {
 }
 
 @media (min-width: 768px) {
-  main .wrapper {
+  main .hero .wrapper {
     width: 648px;
   }
-  main .wrapper .services .services-content {
+  main .hero .wrapper .services .services-content {
     margin-bottom: 60px;
   }
-  main .wrapper .services .services-boxes .services-box {
+  main .hero .wrapper .services .services-boxes .services-box {
     width: 294px;
   }
 }
 @media (min-width: 1024px) {
-  main .wrapper {
+  main .hero .wrapper {
     width: 904px;
   }
-  main .wrapper .services .services-content {
+  main .hero .wrapper .services .services-content {
     margin-bottom: 60px;
   }
-  main .wrapper .services .services-boxes .services-box {
+  main .hero .wrapper .services .services-boxes .services-box {
     width: 261px;
   }
 }
 @media (min-width: 1440px) {
-  main .wrapper {
+  main .hero .wrapper {
     width: 1320px;
   }
-  main .wrapper .services .services-content {
+  main .hero .wrapper .services .services-content {
     margin-bottom: 60px;
   }
-  main .wrapper .services .services-boxes .services-box {
+  main .hero .wrapper .services .services-boxes .services-box {
     width: 400px;
   }
 }
 @media (min-width: 1920px) {
-  main .wrapper {
+  main .hero .wrapper {
     width: 1600px;
   }
-  main .wrapper .services .services-content {
+  main .hero .wrapper .services .services-content {
     margin-bottom: 60px;
   }
-  main .wrapper .services .services-boxes .services-box {
-    width: 493px;
+  main .hero .wrapper .services .services-boxes .services-box {
+    width: 493.1px;
   }
 }
 
