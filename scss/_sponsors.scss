@@ -1,0 +1,170 @@
+.sponsors {
+    .wrapper {
+
+        margin-left: auto;
+        margin-right: auto;
+
+        h3 {
+            display: flex;
+            justify-content: center;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: #323264;
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+
+        .sponsors-cards {
+
+            & a:nth-child(n+7) {
+                display: none;
+            }
+
+            .sponsors-card {
+                display: flex;
+                width: 100%;
+                height: 120px;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .sponsor-1 {
+                background-color: #1c4280;
+            }
+
+            .sponsor-2 {
+                background-color: #143646;
+            }
+
+            .sponsor-3 {
+                background-color: #f48b30;
+            }
+
+            .sponsor-4 {
+                background-color: #9e4dc3;
+            }
+
+            .sponsor-5 {
+                background-color: #fd9339;
+            }
+
+            .sponsor-6 {
+                background-color: #e2e2e4;
+            }
+
+            .sponsor-7 {
+                background-color: #c71c36;
+            }
+
+            .sponsor-8 {
+                background-color: #dcf3f9;
+            }
+
+            .sponsor-9 {
+                background-color: #eaeaea;
+            }
+
+            .sponsor-10 {
+                background-color: #282240
+            }
+
+            .sponsor-11 {
+                background-color: #1d4568;
+            }
+
+            .sponsor-12 {
+                background-color: #000;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .sponsors {
+
+        .wrapper {
+
+            width: 768px;
+
+            .sponsors-cards {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                & a:nth-child(n+7) {
+                    display: flex;
+                }
+
+                .sponsors-card {
+                    width: 256px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .sponsors {
+
+        .wrapper {
+
+            width: 1024px;
+
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .sponsors {
+
+        .wrapper {
+
+            width: 1440px;
+
+            .sponsors-cards {
+
+                .sponsors-card {
+                    width: 360px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .sponsors {
+
+        .wrapper {
+
+            width: 1720px;
+
+            .sponsors-cards {
+
+                .sponsors-card {
+                    width: 430px;
+                }
+
+                .sponsor-1 {
+                    border-top-left-radius: 12px;
+                }
+
+                .sponsor-4 {
+                    border-top-right-radius: 12px;
+                }
+
+                .sponsor-9 {
+                    border-bottom-left-radius: 12px;
+                }
+
+                .sponsor-12 {
+                    border-bottom-right-radius: 12px;
+                }
+            }
+        }
+    }
+}
