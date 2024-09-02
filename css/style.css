@@ -195,6 +195,120 @@ main .line-hero-bottom-second {
     width: 493.1px;
   }
 }
+.team {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.team .team-box {
+  display: flex;
+  flex-direction: column;
+}
+.team .team-box .team-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.team .team-box .team-content {
+  background-color: #f5f5fa;
+  padding: 30px;
+}
+.team .team-box .team-content .team-content-info {
+  margin-bottom: 30px;
+}
+.team .team-box .team-content .team-content-info a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #24a3ff;
+  margin-bottom: 5px;
+}
+.team .team-box .team-content .team-content-info a:hover {
+  color: #f0145a;
+}
+.team .team-box .team-content .team-content-info h2 {
+  font-weight: 700;
+  font-size: 30px;
+  background: linear-gradient(-298deg, #f0145a 0%, #ef8080 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+.team .team-box .team-content .team-content-partner p:first-child {
+  font-weight: 700;
+  font-size: 16px;
+  color: #b3b3ba;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.team .team-box .team-content .team-content-partner p:last-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #b3b3ba;
+  margin: 0;
+}
+.team .team-pages label {
+  display: inline-block;
+  border-radius: 100%;
+  background-color: rgba(36, 164, 255, 0.8);
+  width: 16px;
+  height: 16px;
+  opacity: 0.2;
+}
+.team .team-pages label input {
+  display: none;
+}
+.team .wrapper {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .team {
+    margin-top: 60px;
+  }
+  .team .wrapper {
+    margin: 0 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .team .team-box {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+  }
+  .team .team-box .team-content .team-content-info h2 {
+    font-size: 38px;
+  }
+  .team .team-box .team-image img {
+    height: 530px;
+  }
+  .team .wrapper {
+    margin: 0 60px;
+  }
+}
+@media (min-width: 1440px) {
+  .team .team-box {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 344px;
+  }
+  .team .team-box .team-image img {
+    height: 344px;
+  }
+}
+@media (min-width: 1920px) {
+  .team {
+    display: flex;
+    justify-content: center;
+  }
+  .team .team-box {
+    width: 1600px;
+  }
+}
 .sponsors .wrapper {
   margin-left: auto;
   margin-right: auto;
