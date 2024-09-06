@@ -1,0 +1,132 @@
+footer {
+    background-color: #F5F5FA;
+    padding: 0 30px 30px 30px;
+
+    .footer-border {
+        border: 2px solid #E6E6F0;
+        margin-bottom: 30px;
+    }
+
+    .footer-info {
+        .footer-info-adress {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                color: #323264;
+                margin: 0;
+            }
+
+            a {
+                font-weight: 700;
+                font-size: 12px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: #24a3ff;
+                text-decoration: none;
+            }
+        }
+
+        .footer-info-contact {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+
+            .fb-icon {
+                background-image: url(../images/footer-images/facebook-icon.svg);
+                content: '';
+                align-self: center;
+                background-repeat: no-repeat;
+                width: 38px;
+                height: 38px;
+            }
+
+            a:nth-child(2) {
+                font-weight: 700;
+                font-size: 16px;
+                text-decoration: none;
+                color: #46466e;
+            }
+
+            a:last-child {
+                font-weight: 700;
+                font-size: 16px;
+                color: #24a3ff;
+                text-decoration: none;
+                margin-bottom: 30px;
+            }
+        }
+
+        .footer-info-company {
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                color: #b3b3ba;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    footer {
+        padding: 0 60px 30px 60px;
+
+        .footer-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "adress company"
+                "contact contact"
+            ;
+
+            .footer-info-adress {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                grid-area: adress;
+
+            }
+
+            .footer-info-company {
+                display: grid;
+                order: 1;
+                grid-area: company;
+
+                p {
+                    margin: 0;
+                    text-align: right;
+                }
+            }
+
+            .footer-info-contact {
+                display: flex;
+                grid-area: contact;
+                align-items: center;
+                order: 2;
+                flex-direction: row;
+
+                a::before {
+                    background-image: url(../images/footer-images/pick.svg);
+                    content: "";
+                    background-repeat: no-repeat;
+                    width: 6px;
+                    height: 6px;
+                }
+
+
+                a:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

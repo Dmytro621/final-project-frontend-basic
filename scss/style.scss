@@ -1,5 +1,7 @@
-@use '../fonts/Montserrat/stylesheet.css';
+@use './normalize';
+@use './consistent';
 @use './services';
 @use './team';
 @use './sponsors';
-@use './publications'
+@use './publications';
+@use './footer';
