@@ -360,13 +360,9 @@ template {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.wrapper-consistent .consistent hr {
-  background-color: rgba(255, 255, 255, 0.3);
-  height: 4px;
-  border: 0;
-  margin: 0 30px;
-}
 .wrapper-consistent .consistent .consistent-content {
+  padding-top: 30px;
+  border-top: 4px solid rgba(255, 255, 255, 0.3);
   margin: 0 30px;
 }
 .wrapper-consistent .consistent .consistent-content h2 {
@@ -386,17 +382,19 @@ template {
 
 @media (min-width: 768px) {
   .wrapper-consistent .consistent {
+    padding: 60px 0;
     gap: 60px;
   }
   .wrapper-consistent .consistent .consistent-menu {
     padding-left: 60px;
     padding-right: 60px;
   }
-  .wrapper-consistent .consistent hr {
+  .wrapper-consistent .consistent .consistent-content {
+    padding-top: 60px;
     margin: 0 60px;
   }
-  .wrapper-consistent .consistent .consistent-content {
-    margin: 0 60px;
+  .wrapper-consistent .consistent .consistent-content h2 {
+    font-size: 30px;
   }
 }
 @media (min-width: 1024px) {
@@ -405,15 +403,44 @@ template {
     gap: 60px;
   }
   .wrapper-consistent .consistent .consistent-menu {
-    padding-left: 60px;
-    padding-right: 60px;
-    white-space: wrap;
-  }
-  .wrapper-consistent .consistent hr {
-    margin: 0 60px;
+    flex-direction: column;
+    overflow: visible;
+    gap: 0;
+    justify-content: space-between;
+    text-align: right;
+    padding: 15px 0;
+    margin-left: 60px;
   }
   .wrapper-consistent .consistent .consistent-content {
-    margin: 0 60px;
+    height: 300px;
+    border-top: 0;
+    margin: 0 60px 0 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper-consistent .consistent {
+    margin: 0 180px;
+  }
+  .wrapper-consistent .consistent .consistent-menu {
+    margin-left: 0;
+  }
+  .wrapper-consistent .consistent .consistent-content {
+    margin-right: 0;
+    align-content: center;
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper-consistent {
+    justify-content: center;
+    display: flex;
+  }
+  .wrapper-consistent .consistent {
+    margin: 0;
+    width: 1360px;
   }
 }
 * {
