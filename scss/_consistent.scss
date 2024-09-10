@@ -1,5 +1,6 @@
 .wrapper-consistent {
 
+
     .consistent {
         display: flex;
         flex-direction: column;
@@ -18,10 +19,12 @@
             a {
                 font-weight: 700;
                 font-size: 30px;
-                background: linear-gradient(-298deg, #ef8080 0%, #f0145a 100%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                color: #b3b3ba;
+                text-decoration: none;
+
+                &:hover {
+                    color: #f0145a;
+                }
             }
         }
 

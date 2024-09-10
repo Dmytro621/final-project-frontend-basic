@@ -5,12 +5,19 @@
     .team-box {
         display: flex;
         flex-direction: column;
+        transition: 1s;
+
+
+        &:hover {
+
+            transform: rotatey(180deg);
+        }
 
         .team-image img {
             width: 100%;
             height: 500px;
             object-fit: cover;
-            filter: blur(5px);
+            filter: blur(0px);
             transition: .5s;
 
 
@@ -146,6 +153,7 @@
             .team-image {
                 img {
                     height: 344px;
+                    filter: blur(5px);
                 }
             }
         }

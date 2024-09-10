@@ -1,0 +1,101 @@
+.hero-head {
+    height: 100vh;
+    background-image: url(../images/head-images/back-image-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .hero-info {
+        background-color: rgba(245, 245, 250, 0.2);
+        padding: 12.5px 0;
+
+        .hero-wrapper {
+            width: 345px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .hero-info-lang {
+                display: flex;
+
+                p {
+                    margin: 0;
+                    padding: 5px 7px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    letter-spacing: 0.08em;
+                    text-align: center;
+                    color: #fff;
+                }
+
+                p:last-child {
+                    background-color: #f0145a;
+                    border-radius: 8px;
+                }
+            }
+
+            a[href*="tel"] {
+                font-weight: 700;
+                font-size: 16px;
+                text-align: right;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .mb-only {
+                display: none;
+            }
+        }
+    }
+
+    .hero-wrapper-bottom {
+        width: 345px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100% - 48.8px);
+
+        .hero-logos {
+
+            display: flex;
+            justify-content: space-between;
+
+            .hero-logo {
+                margin: 15px 0;
+                display: flex;
+                gap: 4px;
+                align-items: start;
+
+                p {
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #fff;
+                    margin: 0;
+                }
+            }
+
+            .hero-links {
+                a {
+                    margin-top: 8.5px;
+                    display: block;
+                }
+            }
+        }
+
+        .hero-content {
+            h1 {
+                font-weight: 700;
+                font-size: 38px;
+                text-align: center;
+                color: #fff;
+                margin: 0;
+            }
+        }
+
+        .hero-down {
+            margin: 0 auto 30px;
+        }
+    }
+}
