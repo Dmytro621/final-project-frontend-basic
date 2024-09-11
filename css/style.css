@@ -347,6 +347,8 @@ template {
 .hero-head .hero-info {
   background-color: rgba(245, 245, 250, 0.2);
   padding: 12.5px 0;
+  position: sticky;
+  top: 0;
 }
 .hero-head .hero-info .hero-wrapper {
   width: 345px;
@@ -409,6 +411,9 @@ template {
   margin-top: 8.5px;
   display: block;
 }
+.hero-head .hero-wrapper-bottom .hero-logos .hero-links .hero-links-menu {
+  display: none;
+}
 .hero-head .hero-wrapper-bottom .hero-content h1 {
   font-weight: 700;
   font-size: 38px;
@@ -420,6 +425,82 @@ template {
   margin: 0 auto 30px;
 }
 
+@media (min-width: 768px) {
+  .hero-head {
+    padding-top: 50px;
+  }
+  .hero-head .hero-info {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .hero-head .hero-info .hero-wrapper {
+    width: auto;
+    margin: 0 60px;
+    justify-content: start;
+    gap: 6px;
+  }
+  .hero-head .hero-info .hero-wrapper span {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #e6e6f0;
+  }
+  .hero-head .hero-info .hero-wrapper p {
+    margin: 0;
+  }
+  .hero-head .hero-info .hero-wrapper .mb-only {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: right;
+    color: #b3b3ba;
+  }
+  .hero-head .hero-info .hero-wrapper a img {
+    width: 24px;
+    height: 24px;
+  }
+  .hero-head .hero-wrapper-bottom {
+    width: auto;
+    margin: 0 60px;
+  }
+  .hero-head .hero-wrapper-bottom .hero-logos {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .hero-head .hero-wrapper-bottom .hero-logos .hero-logo {
+    margin: 0;
+  }
+  .hero-head .hero-wrapper-bottom .hero-logos .hero-logo img + p {
+    display: none;
+  }
+  .hero-head .hero-wrapper-bottom .hero-logos .hero-logo a {
+    width: 130px;
+    height: 60px;
+  }
+  .hero-head .hero-wrapper-bottom .hero-logos .hero-logo a img {
+    width: 130px;
+    height: 60px;
+  }
+  .hero-head .hero-wrapper-bottom .hero-logos .hero-links a {
+    display: none;
+  }
+  .hero-head .hero-wrapper-bottom .hero-logos .hero-links .hero-links-menu {
+    display: flex;
+    gap: 15px;
+  }
+  .hero-head .hero-wrapper-bottom .hero-logos .hero-links .hero-links-menu a {
+    display: inline;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+  }
+}
 .wrapper-consistent .consistent {
   display: flex;
   flex-direction: column;
